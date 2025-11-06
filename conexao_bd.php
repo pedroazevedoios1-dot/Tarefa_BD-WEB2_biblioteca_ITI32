@@ -3,11 +3,11 @@
 $servidor = "localhost";
 $usuario = "root";
 $senha = "";
-$bd = "projeto";
+$bd = "biblioteca";
 
 // Criando nova conexão 
 global $conexao;
-$conexao = mysqli_connect($servidor, $usuario, $senha, $bd);
+$conexao = mysqli_connect($isbn , $titulo, $ano_publicacao, $editora, $qtd_total, $qtd_disponivel);
 // Verificar a conexão 
 if (!$conexao) {
     die("Falha na conexão" . mysqli_connect_error());

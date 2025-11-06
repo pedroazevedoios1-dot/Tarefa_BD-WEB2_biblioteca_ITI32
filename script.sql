@@ -1,6 +1,6 @@
 CREATE TABLE Livro (    
     isbn INT PRIMARY KEY, 
-    titulo VARCHAR(255) NOT NULL,
+    titulo VARCHAR(200) NOT NULL,
     ano_publicacao date,
     editora VARCHAR(100),
     qtd_total INT NOT NULL,
