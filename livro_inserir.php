@@ -31,14 +31,12 @@
     $comando = $conexao->prepare($sql);
 
     // 4. Vincula os parâmetros à instrução
-    // Tipos de dados: s (string), s (string), i (integer), s (string), i (integer), i (integer)
     $comando->bind_param("ssisis", $isbn, $titulo, $ano_publicacao, $editora, $qtd_total, $qtd_disponivel);
 
     // 5. Executa o statement
     if ($comando->execute()) {
         echo "<h1 class='alert alert-success'>Livro '{$titulo}' cadastrado com sucesso!</h1>";
     } else {
-        // Se houver erro, pode ser por ISBN duplicado, por exemplo.
         echo "<h1 class='alert alert-danger'>Erro ao inserir o livro: " . $comando->error . "</h1>";
     }
 
