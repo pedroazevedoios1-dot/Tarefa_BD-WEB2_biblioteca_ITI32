@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livro :: Inserir (Create)</title>
+    <title>Livro :: Inserir </title>
 
     <?php
     // Inclui a conexão com o banco
