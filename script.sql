@@ -1,8 +1,12 @@
+CREATE DATABASE BIBLIOTECA
+
+USE BIBLIOTECA;
+
 CREATE TABLE Livro (    
-    isbn INT PRIMARY KEY, 
+    isbn INT not null PRIMARY KEY, 
     titulo VARCHAR(200) NOT NULL,
-    ano_publicacao date,
-    editora VARCHAR(100),
+    ano_publicacao date not null,
+    editora VARCHAR(100) not null,
     qtd_total INT NOT NULL,
     qtd_disponivel INT NOT NULL
 );
