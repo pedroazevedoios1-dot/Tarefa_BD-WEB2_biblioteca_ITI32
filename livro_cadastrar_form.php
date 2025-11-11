@@ -31,7 +31,7 @@
 
                     <div class="form-group">
                         <label>Ano de Publicação</label>
-                        <input type="number" class="form-control" required="" name="txtAnoPublicacao">
+                        <input type="date" class="form-control" required="" name="txtAnoPublicacao">
                     </div>
 
                     <div class="form-group">
@@ -41,7 +41,7 @@
                     
                     <div class="form-group">
                         <label>Quantidade Total de Exemplares</label>
-                        <input type="number" class="form-control" required="" name="txtQtdTotal">
+                        <input type="number" class="form-control" required="" name="txtQtdTotal" min="0">
                     </div>
 
 

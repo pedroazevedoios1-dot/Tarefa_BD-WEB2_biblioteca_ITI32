@@ -3,7 +3,7 @@ CREATE DATABASE BIBLIOTECA
 USE BIBLIOTECA;
 
 CREATE TABLE Livro (    
-    isbn INT not null PRIMARY KEY, 
+    isbn VARCHAR(20) not null PRIMARY KEY, 
     titulo VARCHAR(200) NOT NULL,
     ano_publicacao date not null,
     editora VARCHAR(100) not null,
